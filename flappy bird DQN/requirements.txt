@@ -1,0 +1,8 @@
+# 运行环境：Python 3.12 + CUDA（GPU 可选，CPU 也能跑，只是慢）
+numpy>=1.26
+torch>=2.4          # 本项目在 RTX 5060 (sm_120) + torch 2.14/cu130 上验证
+matplotlib>=3.8     # 画训练曲线
+pygame>=2.5         # 渲染回放 GIF（无显示环境会自动用 SDL dummy 驱动）
+pillow>=10.0        # GIF 编码
+
+# 另外需要 Node.js >= 18：仅用于 tools/ref_env.js（原版游戏逻辑无头参考环境 + 逐帧对拍）
